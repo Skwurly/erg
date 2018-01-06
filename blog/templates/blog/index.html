@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+<head>
+  <title>#!erg</title>
+  <link rel='stylesheet' typr='text/css' href='{% static 'blog/style.css'%}' />
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content='#000000'
+</head>
+<body>
+<div class='header'>
+  <h1>#!ERG</h1>
+  <div class=linkbar>
+    <img class=icon src='{% static 'blog/iconset/github.png'%}' />
+    <img class=icon src='{% static 'blog/iconset/twitter.png'%}' />
+    <img class=icon src='{% static 'blog/iconset/blog.png'%}' />
+    <img class=icon src='{% static 'blog/iconset/about.png'%}' />
+  </div>
+</div>
+<div class='content'>
+  <div class='billboard'>
+
+  </div>
+  {% block content %}
+  {% endblock %}
+</div>
+<div class='footer'>
+hello
+</div>
+</body>
+
+</html>

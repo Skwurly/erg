@@ -1,0 +1,19 @@
+
+{% extends 'blog/index.html' %}
+{% block content %}
+
+
+
+
+{% for post in posts %}
+<div class=post>
+<h2>{{ post.title }}</h2><br />
+<p class=date>#{{ post.created_date }}</p><br />
+{{ post.body|safe }}<br />
+</div>
+{% endfor %}
+
+
+
+
+{% endblock %}
